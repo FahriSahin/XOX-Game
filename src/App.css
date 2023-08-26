@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+/* xox game board */
+.box9{
+    width: 700px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.box{
+    margin:5px;
+    border: 2px solid #38598b;
+    border-radius: 10%;
+    background-color: #e7eaf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.x::after{
+    content: "X";
+    font-size: 180px;
+    color: #38598b;
+}
+.o::after{
+    content: "O";
+    font-size: 180px;
+    color: #38598b;
+}
+.modal{
+    width: 500px;
+    height: 350px;
+    background-color: #e7eaf6;
+    border:2px solid #38598b;
+    border-radius: 10%;
+    position:absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50% , -50%);
+}
+.d-none{
+    display: none !important;
+}
+.modalBody h2,p{
+    color: #38598b;
+    margin-bottom: 40px;
+}
+h2{
+    font-size: 48px;
+}
+button{
+    color: #38598b;
+    border: 2px solid #38598b;
+    border-radius: 20%;
+    padding: 10px;
+    margin: 20px;
+}
+.gameScene{
+    display: flex;
+    justify-content: center;
+}
+.restart{
+    cursor: pointer;
+}
+/* Navbar */
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    background-color: #0092ca;
+}
+.score{
+    margin-right: 20px;
+    font-size: 25px;
+    color: cornsilk;
+}
+.logo{
+    font-size: 48px;
+    color: #113f67;
+}
+.letterO{
+    font-size: 48px;
+    color: #bbe4e9;
+}
